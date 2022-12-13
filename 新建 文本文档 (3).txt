@@ -1,0 +1,15 @@
+1.
+(a) In this situation, if $f(x_4)=f_{4a}$, which means the lowest point is on the left of x4, so the next iteration is $\{x_1,x_2,x_4\}$; If $f(x_4)=f_{4b}$, the lowest point is on the right of x2, so the next iteration is $\{x_2, x_4, x_3\}$
+(b) golden ratio means : (a + b)/a = a/b=(√5 + 1)/2 (a > b > 0). a/b=c/a=c/(b-c): take c = a*a/b -> a(a*a + a*b - b*b) = 0 -> a(a + b) = b*b -> b/a = (a + b)/b，then we find it is golden ratio
+(c) we set a,b,ε. 
+b - 0.618(b - a) => a(1) f(a(1))=>f1
+a + 0.618(b - a) => a(2) f(a(2)) =>f2
+if f1 < f2: a(2) => b a(1) => a(2) f1 => f2 b - 0.618(b - a)=> a(1) f(a(1)) => f1
+else a(1) => a a(2) => a(1) f2 => f1 a + 0.618(b - a)=> a(2) f(a(2)) => f2
+if b-a <= ε end
+else goto if f1 < f2...
+in these steps, we have two function evaluations
+2.in xk, we need to find the point where the derivative is 0, so we need to differentiate both sides of the above equation at the same time, which is q'(x) = f''(xk)(x - xk) + f'(xk) = 0, so the next point is x(k+1) = xk - f'(xk)/f''(xk). just same as build a quadratic model.
+3.In mathematics, a symmetric matrixA with real entries is positive-definite if the real number  x'Ax is positive for every nonzero real column vector. And spectral theorem is a result about when a linear operator or matrix can be diagonalized. 
+Since the symmetric matrix A is a positive definite matrix, there is an orthogonal matrix T, so that the elements on the diagonal of T'AT are all positive values, and the elements on the diagonal are all eigenvalues of A , that is, the eigenvalues of A are all positive numbers
+4.a. 
